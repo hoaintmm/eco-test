@@ -1,0 +1,42 @@
+<!doctype html>
+</header>
+
+
+<p class="lead">Ứng dụng này là trang demo phục vụ cho mục đích phát triển và thử nghiệm. Nếu bạn đăng ký app trên TikTok Developer Console, hãy sử dụng link Privacy Policy và Redirect URL tương ứng.</p>
+
+
+<div class="card">
+<strong>Hướng dẫn nhanh:</strong>
+<ul>
+<li>Website (điền vào TikTok): <code>https://&lt;your-username&gt;.github.io/&lt;repo-name&gt;/</code></li>
+<li>Privacy Policy URL: <code>https://&lt;your-username&gt;.github.io/&lt;repo-name&gt;/privacy.html</code></li>
+<li>Redirect URI (dev): <code>http://localhost:3000/auth/callback</code> hoặc public URL từ ngrok</li>
+</ul>
+</div>
+
+
+<div class="actions">
+<a class="btn primary" href="privacy.html">Xem Privacy Policy</a>
+<a class="btn ghost" href="#contact">Liên hệ</a>
+</div>
+
+
+<section style="margin-top:20px">
+<h3>Thông tin app</h3>
+<p class="meta">Tên app: &lt;APP_NAME&gt; — Loại: Ứng dụng demo / testing</p>
+<p>Nếu bạn cần OAuth flow, backend của bạn cần có endpoint để nhận <code>code</code> từ TikTok, đổi lấy Access Token và lưu trữ an toàn.</p>
+<ol>
+<li>Người dùng ấn "Login with TikTok" —> chuyển hướng tới TikTok OAuth.</li>
+<li>TikTok redirect về Redirect URI kèm ?code=...</li>
+<li>Server dùng code để gọi TikTok token API và lưu access_token.</li>
+</ol>
+</section>
+
+
+<footer id="contact">
+<div>Contact: &lt;YOUR_CONTACT_EMAIL&gt;</div>
+<div style="margin-top:6px;font-size:13px;color:#64748b">Lưu ý: Đây là trang demo. Hãy cập nhật Privacy Policy và thông tin liên hệ trước khi publish chính thức.</div>
+</footer>
+</div>
+</body>
+</html>
